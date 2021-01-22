@@ -35,7 +35,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="O0z-Ay-cSn"/>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="compose" id="EWD-h6-DNQ">
                             <connections>
-                                <segue destination="tyI-Sa-3Up" kind="show" identifier="composeSegue" id="fFA-5T-74U"/>
+                                <segue destination="tyI-Sa-3Up" kind="show" identifier="segueToEntry" id="fFA-5T-74U"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -82,6 +82,9 @@
                     <navigationItem key="navigationItem" id="f64-sN-T4b">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="trash" id="gSW-Je-tuG">
                             <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="tyI-Sa-3Up" id="0q2-e9-j2m"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

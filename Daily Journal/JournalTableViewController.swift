@@ -43,9 +43,16 @@ class JournalTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let entry = entries[indexPath.row]
+        performSegue(withIdentifier: "segueToEntry", sender: entry)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let entryVC = segue.destination as? EntryViewController {
-            
+            if let entryToBeSent = sender as? Entry {
+                entryVC.entry = entryToBeSent
+            }
         }
     }
 }
