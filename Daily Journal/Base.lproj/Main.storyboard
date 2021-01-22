@@ -52,11 +52,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="YMZ-ux-Vuk">
-                                <rect key="frame" x="47" y="108" width="320" height="216"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="YMZ-ux-Vuk">
+                                <rect key="frame" x="145.5" y="108" width="123" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="anX-fb-rbD"/>
+                                    <constraint firstAttribute="width" constant="123" id="rzB-F0-ZLA"/>
+                                </constraints>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wIe-P6-7Tu">
-                                <rect key="frame" x="20" y="344" width="374" height="498"/>
+                                <rect key="frame" x="20" y="171" width="374" height="671"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -67,12 +71,12 @@
                         <viewLayoutGuide key="safeArea" id="FrY-K5-VWR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wIe-P6-7Tu" firstAttribute="leading" secondItem="FrY-K5-VWR" secondAttribute="leading" constant="20" id="7UW-l3-KUe"/>
-                            <constraint firstItem="YMZ-ux-Vuk" firstAttribute="centerX" secondItem="0EF-CK-XmJ" secondAttribute="centerX" id="Yc5-WA-b4f"/>
-                            <constraint firstItem="wIe-P6-7Tu" firstAttribute="top" secondItem="YMZ-ux-Vuk" secondAttribute="bottom" constant="20" id="fdu-Qm-kBG"/>
-                            <constraint firstItem="FrY-K5-VWR" firstAttribute="bottom" secondItem="wIe-P6-7Tu" secondAttribute="bottom" constant="20" id="hfY-Qe-vcW"/>
-                            <constraint firstItem="YMZ-ux-Vuk" firstAttribute="top" secondItem="FrY-K5-VWR" secondAttribute="top" constant="20" id="juQ-xN-ocK"/>
-                            <constraint firstItem="FrY-K5-VWR" firstAttribute="trailing" secondItem="wIe-P6-7Tu" secondAttribute="trailing" constant="20" id="mYo-n1-eQE"/>
+                            <constraint firstItem="YMZ-ux-Vuk" firstAttribute="centerX" secondItem="0EF-CK-XmJ" secondAttribute="centerX" id="5nX-S3-JSZ"/>
+                            <constraint firstItem="wIe-P6-7Tu" firstAttribute="leading" secondItem="FrY-K5-VWR" secondAttribute="leading" constant="20" id="5ur-lf-hu6"/>
+                            <constraint firstItem="YMZ-ux-Vuk" firstAttribute="top" secondItem="FrY-K5-VWR" secondAttribute="top" constant="20" id="6oJ-Qd-nTy"/>
+                            <constraint firstItem="FrY-K5-VWR" firstAttribute="bottom" secondItem="wIe-P6-7Tu" secondAttribute="bottom" constant="20" id="CbF-fh-q1S"/>
+                            <constraint firstItem="FrY-K5-VWR" firstAttribute="trailing" secondItem="wIe-P6-7Tu" secondAttribute="trailing" constant="20" id="L51-nF-SMd"/>
+                            <constraint firstItem="wIe-P6-7Tu" firstAttribute="top" secondItem="YMZ-ux-Vuk" secondAttribute="bottom" constant="20" id="dus-wN-xZ7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f64-sN-T4b">
@@ -80,10 +84,14 @@
                             <color key="tintColor" systemColor="systemRedColor"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="YMZ-ux-Vuk" id="Ffg-Ep-k0q"/>
+                        <outlet property="entryTextView" destination="wIe-P6-7Tu" id="uDh-M1-ZjW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpd-0X-Wxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2145" y="-547"/>
+            <point key="canvasLocation" x="2143.4782608695655" y="-547.09821428571422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q31-Fc-cpP">

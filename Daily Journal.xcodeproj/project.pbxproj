@@ -15,6 +15,8 @@
 		3762215C25B9FB5300175FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3762215A25B9FB5300175FDF /* LaunchScreen.storyboard */; };
 		3762216525BA00FA00175FDF /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762216425BA00FA00175FDF /* JournalTableViewController.swift */; };
 		3762216925BA01D100175FDF /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762216825BA01D100175FDF /* EntryViewController.swift */; };
+		3762217225BAA1E100175FDF /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762217025BAA1E100175FDF /* Entry+CoreDataClass.swift */; };
+		3762217325BAA1E100175FDF /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762217125BAA1E100175FDF /* Entry+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3762215D25B9FB5300175FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3762216425BA00FA00175FDF /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
 		3762216825BA01D100175FDF /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		3762217025BAA1E100175FDF /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3762217125BAA1E100175FDF /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +66,15 @@
 			children = (
 				3762214C25B9FB5000175FDF /* AppDelegate.swift */,
 				3762214E25B9FB5000175FDF /* SceneDelegate.swift */,
+				3762216425BA00FA00175FDF /* JournalTableViewController.swift */,
+				3762216825BA01D100175FDF /* EntryViewController.swift */,
+				3762217025BAA1E100175FDF /* Entry+CoreDataClass.swift */,
+				3762217125BAA1E100175FDF /* Entry+CoreDataProperties.swift */,
 				3762215225B9FB5000175FDF /* Main.storyboard */,
 				3762215825B9FB5300175FDF /* Assets.xcassets */,
 				3762215A25B9FB5300175FDF /* LaunchScreen.storyboard */,
 				3762215D25B9FB5300175FDF /* Info.plist */,
 				3762215525B9FB5000175FDF /* Daily_Journal.xcdatamodeld */,
-				3762216425BA00FA00175FDF /* JournalTableViewController.swift */,
-				3762216825BA01D100175FDF /* EntryViewController.swift */,
 			);
 			path = "Daily Journal";
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3762214D25B9FB5000175FDF /* AppDelegate.swift in Sources */,
+				3762217325BAA1E100175FDF /* Entry+CoreDataProperties.swift in Sources */,
 				3762216925BA01D100175FDF /* EntryViewController.swift in Sources */,
 				3762216525BA00FA00175FDF /* JournalTableViewController.swift in Sources */,
 				3762214F25B9FB5000175FDF /* SceneDelegate.swift in Sources */,
+				3762217225BAA1E100175FDF /* Entry+CoreDataClass.swift in Sources */,
 				3762215725B9FB5000175FDF /* Daily_Journal.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
