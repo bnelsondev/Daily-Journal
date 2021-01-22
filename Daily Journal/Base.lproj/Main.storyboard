@@ -58,6 +58,9 @@
                                     <constraint firstAttribute="height" constant="43" id="anX-fb-rbD"/>
                                     <constraint firstAttribute="width" constant="123" id="rzB-F0-ZLA"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="datePickerChanged:" destination="tyI-Sa-3Up" eventType="valueChanged" id="hAV-cQ-EYM"/>
+                                </connections>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wIe-P6-7Tu">
                                 <rect key="frame" x="20" y="171" width="374" height="671"/>
@@ -88,6 +91,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bottomTextViewConstraint" destination="CbF-fh-q1S" id="RJR-zx-twS"/>
                         <outlet property="datePicker" destination="YMZ-ux-Vuk" id="Ffg-Ep-k0q"/>
                         <outlet property="entryTextView" destination="wIe-P6-7Tu" id="uDh-M1-ZjW"/>
                     </connections>
